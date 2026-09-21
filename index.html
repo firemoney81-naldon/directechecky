@@ -1,23 +1,1562 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
+
+
+  <!-- Structured Data: JSON-LD (Schema.org) for Search Engine Snippets & LLM AI Tab Optimization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://auto.reliabledone.com/#website",
+        "url": "https://auto.reliabledone.com",
+        "name": "오토리포트 포털",
+        "publisher": {
+          "@type": "Organization",
+          "name": "ReliableDone 자동차보험 분석센터",
+          "url": "https://auto.reliabledone.com"
+        }
+      },
+      {
+        "@type": "Article",
+        "@id": "https://auto.reliabledone.com/car-insurance/contract-change#article",
+        "isPartOf": {
+          "@id": "https://auto.reliabledone.com/#website"
+        },
+        "headline": "2026년 최신 자동차보험 계약 변경 절차, 비용 정산 및 연령대별 차종별 종합 요금 가이드",
+        "description": "운전자 범위 및 연령 변경, 차량 대체 및 승계, 담보 및 특약 변경 시 발생하는 추징 보험료 및 환급금 일할 계산 방식과 다이렉트 통신사별 비교 분석.",
+        "inLanguage": "ko-KR",
+        "mainEntityOfPage": "https://auto.reliabledone.com/car-insurance/contract-change",
+        "datePublished": "2026-01-10T09:00:00+09:00",
+        "dateModified": "2026-03-20T14:30:00+09:00",
+        "author": {
+          "@type": "Organization",
+          "name": "손해보험 정책 및 계약 실무 분석팀"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "ReliableDone 자동차보험 분석센터"
+        }
+      },
+      {
+        "@type": "FinancialProduct",
+        "name": "자동차보험 계약 변경 및 배서 서비스",
+        "description": "1년 약정 자동차보험 계약 유지 중 운전자 범위, 피보험자동차, 담보 한도를 변경하고 일할 계산된 정산 보험료를 산출하는 금융 서비스",
+        "category": "Auto Insurance Endorsement",
+        "provider": {
+          "@type": "FinancialService",
+          "name": "국내 손해보험사 다이렉트 센터"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "name": "자동차보험 계약 변경 신청하는 법",
+        "description": "다이렉트 웹사이트, 모바일 어플리케이션 또는 고객센터를 통해 자동차보험 계약 내용을 변경하는 단계별 방법",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "본인 인증 및 계약 조회",
+            "text": "보험사 다이렉트 홈페이지 또는 스마트폰 앱에 로그인하여 현재 가입 중인 자동차보험 계약 상세 내역을 조회합니다."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "변경 항목 선택",
+            "text": "차량 변경, 운전자 범위 및 연령 한정 변경, 담보 추가 및 삭제, 특약 변경 중 원하는 배서 유형을 선택합니다."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "변경 정보 입력 및 증빙 서류 제출",
+            "text": "신규 차량 등록증 정보, 변경 운전자 인적사항 또는 마일리지 사진 등을 등록합니다."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "정산 보험료 확인 및 결제 또는 환급",
+            "text": "잔여 보험 기간에 따라 일할 계산된 추징 보험료를 납부하거나 환급받을 계좌를 지정하여 계약 변경을 완료합니다."
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "자동차보험 계약 변경 시 추가 보험료는 어떻게 계산되나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "계약 변경일 기준으로 잔여 보험 기간(12개월 중 남은 일수)에 대해 일할 계산 방식으로 산정됩니다. 위험도가 높아지는 경우 추가 요금이 추징되며, 위험도가 낮아지는 경우 환급금이 발생합니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "운전자 범위를 당일 즉시 변경하여 바로 운전할 수 있나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "일반적인 운전자 범위 변경 및 임시운전자 특약은 신청 당일 자정(24시)부터 효력이 발생합니다. 따라서 반드시 운전하기 최소 하루 전날 계약 변경 신청을 완료해야 합니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "차량을 변경할 때 기존 보험을 해지하는 것과 계약 변경(차량 대체) 중 무엇이 유리한가요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "기존 보험을 중도 해지할 경우 단기요율이 적용되어 위약금 성격의 손해가 발생할 수 있고 무사고 할인 할증 등급 승계가 중단될 수 있습니다. 따라서 기존 계약에 차량 대체 배서를 진행하는 것이 일반적으로 비용 절감과 무사고 경력 유지 면에서 훨씬 유리합니다."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts: Preconnect & Load Noto Sans KR -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --primary-light: #3b82f6;
+      --primary-soft: #eff6ff;
+      --secondary: #0f766e;
+      --secondary-light: #14b8a6;
+      --secondary-soft: #f0fdfa;
+      --accent: #d97706;
+      --accent-soft: #fffbeb;
+      --neutral-dark: #0f172a;
+      --neutral-body: #334155;
+      --neutral-muted: #64748b;
+      --neutral-border: #e2e8f0;
+      --bg-base: #f8fafc;
+      --bg-card: #ffffff;
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.06);
+      --shadow-lg: 0 10px 25px rgba(15, 23, 42, 0.08);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg-base);
+      color: var(--neutral-body);
+      line-height: 1.8;
+      font-size: 1.05rem;
+      word-break: keep-all;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Header & Hero Section */
+    header.site-header {
+      background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #0f766e 100%);
+      color: #ffffff;
+      padding: 60px 0 50px;
+      border-bottom: 4px solid var(--secondary-light);
+    }
+
+    .header-badge {
+      display: inline-block;
+      background-color: rgba(255, 255, 255, 0.15);
+      color: #e0f2fe;
+      padding: 6px 14px;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    h1.hero-title {
+      font-size: 2.5rem;
+      font-weight: 800;
+      line-height: 1.35;
+      margin: 0 0 20px;
+      letter-spacing: -0.04em;
+      color: #ffffff;
+    }
+
+    .hero-lead {
+      font-size: 1.2rem;
+      line-height: 1.7;
+      color: #e2e8f0;
+      max-width: 900px;
+      margin: 0 0 25px;
+      font-weight: 400;
+    }
+
+    .meta-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 0.95rem;
+      color: #cbd5e1;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      padding-top: 20px;
+    }
+
+    .meta-bar span {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    /* Navigation / Quick Links */
+    nav.toc-nav {
+      background: var(--bg-card);
+      border: 1px solid var(--neutral-border);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      margin: 35px 0;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .toc-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--neutral-dark);
+      margin: 0 0 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid var(--primary-soft);
+      padding-bottom: 12px;
+    }
+
+    .toc-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 12px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .toc-grid a {
+      display: block;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.98rem;
+      padding: 10px 14px;
+      border-radius: var(--radius-sm);
+      background-color: var(--bg-base);
+      transition: all 0.2s ease;
+      border-left: 3px solid var(--primary-light);
+    }
+
+    .toc-grid a:hover {
+      background-color: var(--primary-soft);
+      color: var(--primary);
+      transform: translateX(4px);
+    }
+
+    /* Content Layout */
+    main.content-area {
+      padding-bottom: 70px;
+    }
+
+    section.content-block {
+      background-color: var(--bg-card);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      margin-bottom: 35px;
+      border: 1px solid var(--neutral-border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    h2.block-title {
+      font-size: 1.85rem;
+      font-weight: 800;
+      color: var(--neutral-dark);
+      margin: 0 0 24px;
+      letter-spacing: -0.03em;
+      border-left: 6px solid var(--primary-light);
+      padding-left: 18px;
+      line-height: 1.3;
+    }
+
+    h3.sub-title {
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: #1e293b;
+      margin: 32px 0 16px;
+      letter-spacing: -0.02em;
+    }
+
+    h4.inner-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--secondary);
+      margin: 24px 0 12px;
+    }
+
+    p {
+      margin: 0 0 18px;
+      color: var(--neutral-body);
+      font-size: 1.05rem;
+      line-height: 1.85;
+    }
+
+    .strong-term {
+      font-weight: 700;
+      color: var(--primary);
+      background-color: #f1f5f9;
+      padding: 1px 6px;
+      border-radius: 4px;
+    }
+
+    /* Alert / Informational Callout Boxes */
+    .callout-box {
+      border-left: 5px solid var(--primary-light);
+      background-color: var(--primary-soft);
+      padding: 24px 28px;
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      margin: 25px 0;
+    }
+
+    .callout-box.teal {
+      border-left-color: var(--secondary);
+      background-color: var(--secondary-soft);
+    }
+
+    .callout-box.amber {
+      border-left-color: var(--accent);
+      background-color: var(--accent-soft);
+    }
+
+    .callout-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--neutral-dark);
+      margin: 0 0 10px;
+    }
+
+    .callout-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Card Highlights Grid */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin: 28px 0;
+    }
+
+    .feature-card {
+      background: #ffffff;
+      border: 1px solid var(--neutral-border);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow 0.2s ease;
+    }
+
+    .feature-card:hover {
+      box-shadow: var(--shadow-md);
+    }
+
+    .feature-card h4 {
+      margin: 0 0 12px;
+      font-size: 1.25rem;
+      color: var(--primary);
+    }
+
+    /* Tables */
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 28px 0;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--neutral-border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    table.data-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.98rem;
+      min-width: 680px;
+    }
+
+    table.data-table th {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      font-weight: 700;
+      padding: 14px 18px;
+      border: 1px solid #1e3a8a;
+      white-space: nowrap;
+    }
+
+    table.data-table td {
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--neutral-border);
+      border-right: 1px solid var(--neutral-border);
+      color: var(--neutral-body);
+      vertical-align: middle;
+    }
+
+    table.data-table tr:nth-child(even) td {
+      background-color: #f8fafc;
+    }
+
+    table.data-table tr:hover td {
+      background-color: #f1f5f9;
+    }
+
+    /* Interactive Chart Wrapper */
+    .chart-box {
+      margin: 35px 0;
+      padding: 26px;
+      background: #ffffff;
+      border: 1px solid var(--neutral-border);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .chart-header {
+      margin-bottom: 20px;
+    }
+
+    .chart-header h3 {
+      margin: 0 0 8px;
+      font-size: 1.3rem;
+      color: var(--neutral-dark);
+    }
+
+    .chart-header p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: var(--neutral-muted);
+    }
+
+    /* Interactive Calculator Container */
+    .calculator-panel {
+      background: linear-gradient(145deg, #ffffff 0%, #f0fdfa 100%);
+      border: 2px solid var(--secondary-light);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      margin: 35px 0;
+    }
+
+    .calc-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+      margin-top: 20px;
+    }
+
+    .calc-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .calc-group label {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--neutral-dark);
+      margin-bottom: 6px;
+    }
+
+    .calc-group select, .calc-group input {
+      padding: 12px;
+      border: 1px solid #cbd5e1;
+      border-radius: var(--radius-sm);
+      font-size: 1rem;
+      color: var(--neutral-dark);
+      background-color: #ffffff;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .calc-group select:focus, .calc-group input:focus {
+      border-color: var(--secondary);
+    }
+
+    .calc-btn-wrap {
+      grid-column: 1 / -1;
+      margin-top: 10px;
+    }
+
+    .btn-calc {
+      background-color: var(--secondary);
+      color: #ffffff;
+      border: none;
+      padding: 14px 28px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.2s ease;
+    }
+
+    .btn-calc:hover {
+      background-color: #115e59;
+    }
+
+    .calc-result-box {
+      margin-top: 24px;
+      padding: 20px;
+      background: #ffffff;
+      border-radius: var(--radius-sm);
+      border: 1px solid #99f6e4;
+      display: none;
+    }
+
+    /* Accordion FAQ */
+    .faq-list {
+      margin: 25px 0 0;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .faq-item {
+      border: 1px solid var(--neutral-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      background: #ffffff;
+    }
+
+    .faq-question {
+      padding: 20px 24px;
+      background-color: #ffffff;
+      color: var(--neutral-dark);
+      font-weight: 700;
+      font-size: 1.12rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background-color 0.2s ease;
+      user-select: none;
+    }
+
+    .faq-question:hover {
+      background-color: var(--primary-soft);
+    }
+
+    .faq-toggle-icon {
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: var(--primary);
+      transition: transform 0.2s ease;
+    }
+
+    .faq-item.active .faq-toggle-icon {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 20px 24px;
+      background-color: #f8fafc;
+      border-top: 1px solid var(--neutral-border);
+      color: var(--neutral-body);
+      font-size: 1.02rem;
+      line-height: 1.8;
+    }
+
+    /* Footnotes & Authority Links */
+    .authority-section {
+      background-color: #f1f5f9;
+      padding: 30px;
+      border-radius: var(--radius-md);
+      margin-top: 40px;
+      border: 1px solid var(--neutral-border);
+    }
+
+    .authority-list {
+      list-style: none;
+      padding: 0;
+      margin: 15px 0 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .authority-list li {
+      font-size: 0.98rem;
+    }
+
+    .authority-list a {
+      color: var(--primary);
+      text-decoration: underline;
+      font-weight: 600;
+    }
+
+    .authority-list a:hover {
+      color: var(--secondary);
+    }
+
+    /* Footer */
+    footer.site-footer {
+      background-color: var(--neutral-dark);
+      color: #94a3b8;
+      padding: 40px 0;
+      font-size: 0.92rem;
+      line-height: 1.7;
+    }
+
+    footer.site-footer a {
+      color: #cbd5e1;
+      text-decoration: none;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      h1.hero-title {
+        font-size: 1.95rem;
+      }
+      section.content-block {
+        padding: 24px 18px;
+      }
+      .calc-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header & Hero Section -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-badge">2026 손해보험 계약 배서 및 표준 실무 리포트</div>
+      <h1 class="hero-title">2026년 자동차보험 계약 변경 가이드: 운전자 범위·차량 대체·담보 조정 및 환급금 계산</h1>
+      <p class="hero-lead">
+        자동차보험은 1년 약정 기간 동안 피보험자동차 교체, 운전자 연령 및 범위 한정 확대, 담보 증액 등 다양한 생활 변화에 맞춰 유연하게 계약을 변경할 수 있습니다. 
+        해지 시 발생하는 단기요율 손실과 위약금 성격의 손해를 방지하고, 일할 계산을 통해 가장 합리적으로 추가 보험료 납부 및 환급금을 처리하는 전문 법률 및 실무 가이드를 제공합니다.
+      </p>
+      <div class="meta-bar">
+        <span>발행 연도: 2026년 최신 개정판</span>
+        <span>기준 법령: 상법 보험편 및 자동차손해배상보장법</span>
+        <span>공식 지원: 국내 다이렉트 손해보험 전사 배서 시스템</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Navigation / TOC -->
+    <nav class="toc-nav" aria-label="문서 목차">
+      <div class="toc-title">
+        <span>자동차보험 계약 변경 핵심 목차 둘러보기</span>
+      </div>
+      <ul class="toc-grid">
+        <li><a href="#section-overview">1. 계약 변경의 법적 정의와 구조적 원리</a></li>
+        <li><a href="#section-types">2. 계약 변경 핵심 5대 유형 상세 분석</a></li>
+        <li><a href="#section-pricing">3. 차종별·연령대별 변경 요금표 및 등급 분석</a></li>
+        <li><a href="#section-calculation">4. 추징금 및 환급금 일할 계산 공식</a></li>
+        <li><a href="#section-procedure">5. 다이렉트 앱 및 온라인 사이트 신청 절차</a></li>
+        <li><a href="#section-insurers">6. 주요 손해보험사 브랜드별 계약 변경 비교</a></li>
+        <li><a href="#section-community">7. 커뮤니티 실전 팁 및 내돈내산 분석</a></li>
+        <li><a href="#section-keywords">8. 연관 검색어 및 포털 트렌드 분석</a></li>
+        <li><a href="#section-compliance">9. 고지의무 위반 방지 및 행정 유의사항</a></li>
+        <li><a href="#section-interactive">10. 보험료 변경 모의 계산기 및 차트</a></li>
+        <li><a href="#section-faq">11. 자주 묻는 질문 10선</a></li>
+        <li><a href="#section-reference">12. 공인 외부 기관 및 신뢰 출처</a></li>
+      </ul>
     </nav>
-    <main>
-      <h1>Home page</h1>
+
+    <!-- Main Content Area -->
+    <main class="content-area">
+
+      <!-- Section 1 -->
+      <section id="section-overview" class="content-block">
+        <h2 class="block-title">1. 자동차보험 계약 변경의 법적 정의와 구조적 원리</h2>
+        <p>
+          <strong class="strong-term">자동차보험 계약 변경</strong>이란 최초 보험에 <strong class="strong-term">가입</strong>할 당시 체결했던 보험계약의 본질적인 내용인 피보험자동차, 운전자 한정 범위, 최저 운전 연령, 담보 종목 및 가입 금액 등을 보험 기간 도중에 수정하는 법률적 배서(Endorsement) 절차를 의미합니다. 통상 자동차보험은 1년(12개월) 단위의 단기 <strong class="strong-term">계약</strong>으로 진행되며, 보험료는 1년치 위험률을 사전 산출하여 일시납 또는 분납 형태로 납입하게 됩니다. 그러나 보험 기간 도중 차량을 교체하거나 가족 중 누군가가 추가로 운전을 해야 하는 상황이 빈번히 발생합니다.
+        </p>
+        <p>
+          이때 다수의 운전자들이 가장 많이 고민하는 사안은 기존 보험을 완전히 중도 해지하고 신규 계약으로 전환할 것인지, 아니면 기존 계약의 틀을 유지한 채 <strong class="strong-term">계약 변경</strong>을 신청할 것인가 하는 부분입니다. 결론부터 명확히 짚고 넘어가자면, 특별한 불이익 사유가 없는 한 기존 계약에 대해 배서를 신청하는 것이 금전적, 행정적으로 훨씬 유리합니다. 중도 해지 시에는 일반적인 일할 계산이 아닌 금융당국 인가 단기요율표가 적용되어 경과 기간에 따라 최대 10퍼센트에서 20퍼센트 이상의 해지공제액(사실상의 <strong class="strong-term">위약금</strong> 성격의 손해)이 공제된 후 잔여액만 <strong class="strong-term">환불</strong>되기 때문입니다.
+        </p>
+        <div class="callout-box">
+          <div class="callout-title">상법상 위험변경증가와 통지의무의 중요성</div>
+          <p>
+            상법 제652조에 의거하여 보험계약자 또는 피보험자는 보험기간 중에 사고발생의 위험이 현저하게 변경되거나 증가된 사실을 안 때에는 지체 없이 보험자에게 통지하여야 합니다. 만약 운전자 범위를 본인 1인 한정으로 설정해 둔 상태에서 자녀나 형제자매가 운전하도록 방치하거나, 비유상 운송 특약 상태에서 유상 화물 운송이나 렌터카 영업 용도로 차량을 전용했음에도 계약 변경을 통지하지 않은 채 사고가 발생하면 보험금 지급이 전액 면책되거나 계약이 강제 해지될 수 있습니다.
+          </p>
+        </div>
+        <p>
+          따라서 계약 변경은 단순한 행정 편의의 문제가 아니라, 사고 발생 시 완벽한 법적 대인배상 및 대물배상, 자기신체사고 혹은 자동차상해의 담보 효력을 유지하기 위한 필수적인 법률 행위입니다. 2026년 현재는 각 손해보험사의 다이렉트 모바일 <strong class="strong-term">앱</strong>과 온라인 <strong class="strong-term">인터넷</strong> 포털 시스템의 고도화로 서류 제출과 전자서명이 실시간으로 처리되어 당일에도 즉시 정산 금액 산출 및 변경 승인이 가능해졌습니다.
+        </p>
+      </section>
+
+      <!-- Section 2 -->
+      <section id="section-types" class="content-block">
+        <h2 class="block-title">2. 자동차보험 계약 변경의 핵심 5대 유형 상세 분석</h2>
+        <p>
+          보험소비자가 실제 일상생활에서 접하게 되는 계약 변경의 형태는 크게 다섯 가지 영역으로 분류됩니다. 각 영역마다 요구되는 필요 서류, 효력 발생 시점, 정산 <strong class="strong-term">비용</strong>의 변동 폭이 상이하므로 항목별 세부 규정을 면밀히 파악해야 합니다.
+        </p>
+
+        <h3 class="sub-title">유형 1: 운전자 한정 범위 및 연령 특약 변경</h3>
+        <p>
+          가장 빈번하게 일어나는 변경 유형입니다. 최초 1인 한정으로 가입했다가 명절 귀성길 장거리 운전을 위해 일시적으로 형제자매가 교대 운전을 해야 하거나, 신규 취직 및 결혼 등으로 인해 배우자나 자녀를 상시 운전자로 등록해야 하는 경우입니다.
+        </p>
+        <p>
+          운전자 범위의 종류는 다음과 같이 세분화됩니다.
+        </p>
+        <ul>
+          <li><strong>기명피보험자 1인 한정:</strong> 보험에 등록된 본인만 운전 가능하며 가장 요금이 저렴함.</li>
+          <li><strong>부부 한정:</strong> 법률상 혼인관계 및 사실혼 관계에 있는 배우자까지 운전 가능.</li>
+          <li><strong>지정 1인 추가(1인+지정 1인):</strong> 본인 외에 혈연관계가 없는 타인도 지정하여 포함 가능.</li>
+          <li><strong>가족 한정:</strong> 본인의 부모, 배우자, 자녀, 사위, 며느리까지 포함(형제, 자매, 남매는 법적 가족 한정에서 제외되므로 별도 특약 필요).</li>
+          <li><strong>누구나 운전 가능:</strong> 운전자의 제한을 두지 않는 형태로 위험률이 가장 높아 보험료 상승폭이 큼.</li>
+        </ul>
+        <p>
+          운전자 범위 변경 시 가장 주의할 점은 <strong class="strong-term">효력 발생 시점</strong>입니다. 계약 변경을 신청하고 추가 보험료를 결제 완료한 당일 자정(24:00)부터 효력이 발생하므로, 내일 오전부터 다른 사람이 차량을 몰아야 한다면 반드시 오늘 저녁 23시 50분 전까지는 배서 접수와 수납을 완료해야 합니다.
+        </p>
+
+        <h3 class="sub-title">유형 2: 차량 교체(대차) 및 명의 이전 배서</h3>
+        <p>
+          차량을 매각하거나 폐차하고 새로운 차량을 구입했을 때 기존 자동차보험을 신규 차량으로 승계시키는 작업입니다. 이를 실무상 <strong class="strong-term">차량 대체</strong>라고 부릅니다. 
+          차량 대체가 승인되기 위해서는 기본적으로 기존 차량과 신규 차량의 차종 분류가 동일해야 합니다. 예를 들어 일반 승용차에서 일반 승용차로 교체하는 것은 자유로우나, 5인승 승용차에서 11인승 승합차로 교체하거나 1톤 화물차로 변경하는 경우에는 인수 지침 및 요율 체계의 차이로 인해 일부 제한이 따를 수 있습니다.
+        </p>
+        <p>
+          차량 대체를 진행할 때는 신차의 차량번호, 차대번호, 제조사, 모델명, 옵션 가액(블랙박스, 내비게이션, 빌트인캠, 첨단안전장치 등)의 정확한 차량가액을 입력해야 하며, 신구 차량의 가액 차이 및 안전장치 유무에 따라 추가 납부 또는 <strong class="strong-term">환불</strong> 정산이 집행됩니다.
+        </p>
+
+        <h3 class="sub-title">유형 3: 보장 담보 및 가입 한도 금액 상향</h3>
+        <p>
+          최근 고가 외제차 및 프리미엄 전기차의 보급이 크게 늘어남에 따라 대물배상 한도를 기존 2억원이나 3억원에서 5억원, 10억원으로 증액하거나, 자기신체사고(자손)를 보다 보장 범위가 넓은 자동차상해(자상)로 전환하고자 하는 소비자가 급증했습니다.
+        </p>
+        <p>
+          대물배상 2억원에서 10억원으로 5배를 상향하더라도 연간 보험료 인상분은 통상 1만 원에서 2만 원 안팎에 불과하므로, 잔여 일수로 일할 계산하면 불과 수천 원대의 아주 미미한 <strong class="strong-term">금액</strong>만 추가 납입하고도 엄청난 보장 자산을 확보할 수 있는 대표적인 추천 변경 항목입니다.
+        </p>
+
+        <h3 class="sub-title">유형 4: 할인 특약의 사후 추가 및 변경</h3>
+        <p>
+          가입 시점에는 요건을 갖추지 못했으나 보험 유지 중 새롭게 혜택 대상이 되어 소급 또는 일할 적용을 받는 경우입니다.
+        </p>
+        <ul>
+          <li><strong>마일리지(주행거리) 특약:</strong> 보험 만기 시점에 최종 주행거리 계기판 사진을 등록하여 연간 주행거리(예: 3,000km 이하 최대 35~45% 환급)에 따른 보험료 반환.</li>
+          <li><strong>블랙박스 및 첨단안전장치(ADAS):</strong> 전방충돌방지보조, 차선이탈경고장치 등이 탑재된 신차 옵션을 뒤늦게 등록하거나 외장 블랙박스를 장착하여 사후 할인 배서 신청.</li>
+          <li><strong>자녀 할인 특약:</strong> 보험 기간 중 자녀가 출생하였거나 임신 사실을 확인한 경우 임신확인서 또는 가족관계증명서를 모바일 앱으로 촬영 제출하여 잔여 기간 및 소급 할인 환급.</li>
+          <li><strong>티맵/카카오내비 안전운전 점수 특약:</strong> 누적 주행거리와 안전운전 점수가 기준치(통상 80점 이상)를 초과했을 때 계약 도중 특약을 추가하여 즉시 일할 환급 수령.</li>
+        </ul>
+
+        <h3 class="sub-title">유형 5: 등록 번호판 및 주소지 변경</h3>
+        <p>
+          신차 출고 당시 임시운행허가증(임시번호판) 상태로 차대번호를 통해 긴급히 보험에 가입했다가 정식 번호판이 교부되었을 때 정식 등록번호로 변경하는 배서입니다. 또한 이사로 인해 주민등록상 주소지가 변경된 경우에도 지역별 위험도 요율 반영 및 과태료 고지서 누락을 막기 위해 필수적으로 주소 변경 배서를 진행해야 합니다.
+        </p>
+      </section>
+
+      <!-- Section 3 -->
+      <section id="section-pricing" class="content-block">
+        <h2 class="block-title">3. 2026년 차종별·연령대별 자동차보험 계약 변경 요금표 및 등급표 분석</h2>
+        <p>
+          자동차보험 계약 변경 시 발생하는 정산 금액은 운전자의 법정 생년월일(만 나이 요율 체계)과 대상 차량의 보험개발원 차량모델등급평가 결과에 의해 절대적인 영향을 받습니다. 2026년 손해보험업계의 표준 요율 테이블을 기준으로 연령대 및 주요 인기 차종별 변경 양상을 체계적으로 비교 분석합니다.
+        </p>
+
+        <h3 class="sub-title">주요 연령대별 위험률 가중치와 운전자 범위 변경 시 요금 차이</h3>
+        <p>
+          자동차보험 요율에서 <strong class="strong-term">가장</strong> 극적인 <strong class="strong-term">차이점</strong>이 발생하는 구간은 바로 만 20대 초반과 30대 진입 구간입니다. 만 19세, 만 21세, 만 24세 미만 구간은 통계학적 사고 발생 빈도가 압도적으로 높아 할증률이 가장 높게 적용됩니다. 반면 만 30세, 만 35세, 만 43세, 만 48세 등 상위 연령 한정 특약으로 묶을수록 기본 요금 자체가 대폭 저렴해집니다.
+        </p>
+        <p>
+          만약 기존 40대 부부 한정(만 43세 이상 한정)으로 유지되던 가족 차량에 만 21세 자녀를 1인 추가하거나 누구나 운전으로 변경할 경우, 남은 6개월 동안 납부해야 하는 추가 추징 보험료는 기존 40대 연간 요금의 절반에 육박할 정도로 크게 치솟을 수 있습니다.
+        </p>
+
+        <div class="table-container">
+          <table class="data-table">
+            <caption>연령대별 기본 위험도 등급 및 운전자 추가 시 예상 추징률 요금표</caption>
+            <thead>
+              <tr>
+                <th>구분 연령</th>
+                <th>대표 기준 구간</th>
+                <th>기본 요율 지수</th>
+                <th>1인에서 누구나 변경 시 상승 계수</th>
+                <th>특약 변경 시 핵심 검토 사항</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>만 19세 ~ 만 21세</td>
+                <td>20대 극초기 신규</td>
+                <td>260% ~ 310%</td>
+                <td>+180% ~ +220%</td>
+                <td>임시운전자 특약 일 단위 활용이 훨씬 유리함</td>
+              </tr>
+              <tr>
+                <td>만 22세 ~ 만 24세</td>
+                <td>20대 초반 대학생</td>
+                <td>190% ~ 230%</td>
+                <td>+120% ~ +150%</td>
+                <td>군 운전병 복무 경력 등록으로 요율 인하 선행 필요</td>
+              </tr>
+              <tr>
+                <td>만 26세 ~ 만 28세</td>
+                <td>20대 중후반 사회초년생</td>
+                <td>135% ~ 160%</td>
+                <td>+65% ~ +85%</td>
+                <td>만 26세 이상 한정 진입으로 실질적 요금 안정권</td>
+              </tr>
+              <tr>
+                <td>만 30세 ~ 만 35세</td>
+                <td>30대 안정 운전자</td>
+                <td>95% ~ 105%</td>
+                <td>+30% ~ +45%</td>
+                <td>부부 한정 전환 및 자녀 할인 특약 동시 적용 권장</td>
+              </tr>
+              <tr>
+                <td>만 43세 ~ 만 48세</td>
+                <td>40대 최저 위험군</td>
+                <td>75% ~ 85%</td>
+                <td>+20% ~ +30%</td>
+                <td>전 연령대 중 표준 요율이 가장 낮고 안정적</td>
+              </tr>
+              <tr>
+                <td>만 50세 ~ 만 65세</td>
+                <td>5060 장년층</td>
+                <td>80% ~ 90%</td>
+                <td>+25% ~ +35%</td>
+                <td>시니어 첨단안전장치 교육 이수 할인 연계 가능</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="sub-title">2026 대표 차종별 모델 등급 및 차량 변경(대차) 정산 시뮬레이션</h3>
+        <p>
+          기존 보유 차량을 처분하고 새로운 신차 또는 중고차를 구입하여 차량 대체 배서를 신청할 때, 차종별 차량가액과 모델별 안전 등급(1등급부터 26등급까지 분류, 26등급이 가장 안전하여 자차 보험료가 가장 저렴함)에 따라 정산 금액이 확연히 달라집니다.
+        </p>
+
+        <div class="table-container">
+          <table class="data-table">
+            <caption>국내 인기 모델별 등급표 및 차량 교체(대차) 시 평균 정산 예상 비용 (잔여기간 180일 기준)</caption>
+            <thead>
+              <tr>
+                <th>차급 분류</th>
+                <th>대상 모델명</th>
+                <th>차량모델등급(평균)</th>
+                <th>연간 자차 기준 요금</th>
+                <th>아반떼 기준 대차 시 반년 정산 추징/환급 예상액</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>준중형 승용</td>
+                <td>현대 아반떼 CN7</td>
+                <td>19등급 (우수)</td>
+                <td>약 380,000원</td>
+                <td>기준 모델 (0원)</td>
+              </tr>
+              <tr>
+                <td>중형 세단</td>
+                <td>기아 K5 DL3</td>
+                <td>16등급 (보통)</td>
+                <td>약 460,000원</td>
+                <td>추가 추징 약 45,000원 ~ 60,000원</td>
+              </tr>
+              <tr>
+                <td>준대형 세단</td>
+                <td>현대 그랜저 GN7</td>
+                <td>20등급 (매우 우수)</td>
+                <td>약 520,000원</td>
+                <td>추가 추징 약 80,000원 ~ 110,000원</td>
+              </tr>
+              <tr>
+                <td>중형 SUV</td>
+                <td>기아 쏘렌토 MQ4 하이브리드</td>
+                <td>21등급 (최상위권)</td>
+                <td>약 490,000원</td>
+                <td>추가 추징 약 65,000원 ~ 85,000원</td>
+              </tr>
+              <tr>
+                <td>준중형 SUV</td>
+                <td>기아 스포티지 NQ5</td>
+                <td>18등급 (양호)</td>
+                <td>약 440,000원</td>
+                <td>추가 추징 약 35,000원 ~ 50,000원</td>
+              </tr>
+              <tr>
+                <td>패밀리 미니밴</td>
+                <td>기아 카니발 4세대</td>
+                <td>19등급 (우수)</td>
+                <td>약 510,000원</td>
+                <td>추가 추징 약 75,000원 ~ 95,000원</td>
+              </tr>
+              <tr>
+                <td>프리미엄 세단</td>
+                <td>제네시스 G80 RG3</td>
+                <td>22등급 (최우수)</td>
+                <td>약 780,000원</td>
+                <td>추가 추징 약 210,000원 ~ 260,000원</td>
+              </tr>
+              <tr>
+                <td>프리미엄 SUV</td>
+                <td>제네시스 GV70 / GV80</td>
+                <td>20~21등급 (우수)</td>
+                <td>약 850,000원</td>
+                <td>추가 추징 약 250,000원 ~ 310,000원</td>
+              </tr>
+              <tr>
+                <td>경형 승용</td>
+                <td>현대 캐스퍼 / 기아 레이</td>
+                <td>17~18등급 (양호)</td>
+                <td>약 260,000원</td>
+                <td>환급 발생 (약 55,000원 ~ 75,000원 반환)</td>
+              </tr>
+              <tr>
+                <td>전용 전기차</td>
+                <td>현대 아이오닉 5 / 기아 EV6</td>
+                <td>15~17등급 (보통)</td>
+                <td>약 680,000원</td>
+                <td>추가 추징 약 160,000원 ~ 200,000원</td>
+              </tr>
+              <tr>
+                <td>수입 전기차</td>
+                <td>테슬라 모델 Y / 모델 3</td>
+                <td>11~13등급 (손해율 높음)</td>
+                <td>약 1,150,000원</td>
+                <td>추가 추징 약 420,000원 ~ 530,000원</td>
+              </tr>
+              <tr>
+                <td>수입 럭셔리</td>
+                <td>벤츠 E클래스 / BMW 5시리즈</td>
+                <td>12~14등급 (부품가 높음)</td>
+                <td>약 1,300,000원</td>
+                <td>추가 추징 약 480,000원 ~ 610,000원</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          위 표에서 확인되듯, 동일한 운전자 조건이라 하더라도 아반떼에서 제네시스나 테슬라, 벤츠와 같은 고가 차량으로 대체할 경우 자차 담보 가액 상승 및 모델 등급 격차로 인해 상당한 추징금이 발생합니다. 반대로 대형차에서 경차인 캐스퍼나 레이로 차량을 다운사이징하여 대차 배서를 진행하면 남은 기간에 비례하여 쏠쏠한 <strong class="strong-term">환급금</strong>을 통장으로 돌려받게 됩니다.
+        </p>
+      </section>
+
+      <!-- Section 4 -->
+      <section id="section-calculation" class="content-block">
+        <h2 class="block-title">4. 추징금 및 환급금 일할 계산 원리와 계산 공식 심층 해부</h2>
+        <p>
+          자동차보험 계약 변경의 가장 큰 장점은 모든 정산이 정확한 날짜를 기준으로 나뉘는 <strong class="strong-term">일할 계산</strong>(Pro-rata) 원칙을 따른다는 점입니다. 금융감독원 표준약관에 규정된 배서 보험료 정산 메커니즘을 상세히 파악하면 불필요한 비용 누수를 완전히 차단할 수 있습니다.
+        </p>
+
+        <h3 class="sub-title">배서 보험료 산출의 기본 공식</h3>
+        <p>
+          계약 변경에 따른 추가 납입 또는 환급 금액은 다음과 같은 산식에 의해 분 단위 전산으로 오차 없이 자동 산출됩니다.
+        </p>
+        <div class="callout-box teal">
+          <div class="callout-title">일할 정산 표준 수식</div>
+          <p>
+            <strong>정산 차액 = (변경 후 연간 조건 보험료 - 변경 전 연간 조건 보험료) × (잔여 유효 일수 / 365일)</strong>
+          </p>
+          <p>
+            단, 윤년의 경우 366일로 나뉘며, 변경 당일 효력 발생 시점(통상 24시 또는 배서 승인 시각)부터 만기일 24시까지 남은 총 날짜 수를 일 단위로 계상합니다.
+          </p>
+        </div>
+
+        <h3 class="sub-title">단기요율표와 일할요율의 명확한 차이점</h3>
+        <p>
+          소비자들이 흔히 오해하는 항목 중 하나가 바로 계약 변경과 중도 해지의 차이입니다. 계약을 중도에 해약하고 타사로 넘어가려고 할 때 적용되는 계산 방식은 일할 계산이 아닌 <strong class="strong-term">단기요율(Short-rate)</strong>입니다.
+        </p>
+        <div class="table-container">
+          <table class="data-table">
+            <caption>임의 해지 시 적용되는 손해보험 단기요율표 예시</caption>
+            <thead>
+              <tr>
+                <th>경과 기간</th>
+                <th>적용 단기요율 (보험사가 보유하는 비율)</th>
+                <th>소비자 환급 비율</th>
+                <th>일할 계산 대비 소비자 손실율</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>15일 이하</td>
+                <td>15%</td>
+                <td>85%</td>
+                <td>약 11% 손실</td>
+              </tr>
+              <tr>
+                <td>1개월 이하</td>
+                <td>25%</td>
+                <td>75%</td>
+                <td>약 17% 손실</td>
+              </tr>
+              <tr>
+                <td>3개월 이하</td>
+                <td>45%</td>
+                <td>55%</td>
+                <td>약 20% 손실</td>
+              </tr>
+              <tr>
+                <td>6개월 이하</td>
+                <td>70%</td>
+                <td>30%</td>
+                <td>약 20% 손실</td>
+              </tr>
+              <tr>
+                <td>9개월 이하</td>
+                <td>85%</td>
+                <td>15%</td>
+                <td>약 10% 손실</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          예를 들어 1년 보험료로 100만 원을 납부하고 정확히 6개월(180일)이 지난 시점에서 단순히 다른 보험사가 더 싸다는 이유로 중도 해지할 경우, 일할 계산이라면 50만 원(50%)을 돌려받아야 하지만 단기요율 70%가 적용되어 소비자는 불과 30만 원밖에 환급받지 못합니다. 무려 20만 원의 원금 손실이 발생합니다.
+        </p>
+        <p>
+          반면 동일한 상태에서 기존 보험사에 <strong class="strong-term">계약 변경</strong>을 신청하여 차를 바꾸거나 운전자를 바꾸면 아무런 위약 공제 없이 100% 순수 일할 정산이 집행되므로 절대적으로 계약 변경 배서가 유리합니다.
+        </p>
+
+        <h3 class="sub-title">결제 수단 및 영수증 발급</h3>
+        <p>
+          계약 변경으로 인해 추가 납부해야 하는 추징금은 신용카드, 카카오페이, 네이버페이, 토스페이, 실시간 계좌이체 등 다채로운 전자결제 수단을 통해 무이자 할부 혜택을 받으며 결제할 수 있습니다. 환급금이 발생하는 경우에는 계약자 본인 명의의 은행 계좌번호를 입력하면 통상 영업일 기준 1~2일 이내, 빠른 다이렉트 전산망의 경우 실시간(즉시)으로 이체 처리됩니다.
+        </p>
+      </section>
+
+      <!-- Section 5 -->
+      <section id="section-procedure" class="content-block">
+        <h2 class="block-title">5. 다이렉트 앱 및 온라인 사이트 신청 절차와 방법</h2>
+        <p>
+          과거에는 보험 설계사나 콜센터 상담원과의 긴 유선 통화를 거쳐 팩스로 서류를 전송해야 했으나, 2026년 현재는 스마트폰 다이렉트 모바일 <strong class="strong-term">어플</strong> 및 웹 <strong class="strong-term">사이트</strong>를 통해 24시간 365일 언제 어디서나 계약자 스스로 배서를 완결할 수 있습니다.
+        </p>
+
+        <div class="card-grid">
+          <div class="feature-card">
+            <h4>단계 1: 본인 인증 및 로그인</h4>
+            <p>
+              보험사 공식 다이렉트 어플리케이션 또는 인터넷 홈페이지에 접속하여 네이버 인증서, 카카오톡 지갑 인증, 토스 인증, PASS 앱, 공동인증서 등을 통해 본인 확인을 거친 후 로그인합니다.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h4>단계 2: 계약 변경 메뉴 진입</h4>
+            <p>
+              'My페이지' 또는 '계약 관리/변경' 카테고리에서 진행 중인 유효 계약을 선택하고, 운전자 범위 변경, 차량 대체, 담보 변경, 특약 추가 중 희망하는 항목을 클릭합니다.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h4>단계 3: 변경 데이터 입력 및 서류 촬영</h4>
+            <p>
+              새로 운전할 피보험자의 주민등록번호를 입력하거나, 신규 차량의 자동차등록증 상단 정보를 입력합니다. 스마트폰 카메라로 차량 번호판, 계기판 주행거리, 블랙박스 전면 사진을 즉석에서 업로드합니다.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h4>단계 4: 정산료 확인 및 전자서명</h4>
+            <p>
+              전산에서 실시간으로 산출된 일할 계산 추가 보험료 또는 환급액을 확인하고 간편 전자서명을 진행합니다. 추가 요금 결제 시 즉시 영수증과 변경된 보험가입증명서(전자증권)가 모바일로 발급됩니다.
+            </p>
+          </div>
+        </div>
+
+        <div class="callout-box amber">
+          <div class="callout-title">임시운전자 특약(원데이) 신청 시 핵심 주의사항</div>
+          <p>
+            명절, 휴가철 등 며칠 동안만 타인이 운전해야 한다면 운전자 범위를 아예 변경하는 것보다 '임시운전자 특약'을 신청하는 것이 비용 면에서 극단적으로 절약됩니다. 하루 단위(1일에서 최대 30일까지 설정 가능)로 1일당 약 5,000원에서 9,000원의 소액으로 누구나 운전 가능한 상태로 전환됩니다. 단, 이 특약 역시 반드시 운전 시작 전날 24시까지 가입해야 함을 잊지 말아야 합니다.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 6 -->
+      <section id="section-insurers" class="content-block">
+        <h2 class="block-title">6. 국내 주요 손해보험사 브랜드별 계약 변경 시스템 비교</h2>
+        <p>
+          소비자들이 가장 많이 선택하는 국내 메이저 손해보험사들은 각각 특화된 전산 인터페이스와 계약 변경 편의 기능을 갖추고 있습니다. 브랜드별 장단점과 전산 특징을 비교해 드립니다.
+        </p>
+
+        <div class="table-container">
+          <table class="data-table">
+            <caption>주요 손해보험사 다이렉트 계약 변경 시스템 비교표</caption>
+            <thead>
+              <tr>
+                <th>보험사 브랜드</th>
+                <th>앱 사용자 편의성</th>
+                <th>차량 대체 실시간 자동화</th>
+                <th>주말/야간 즉시 처리 여부</th>
+                <th>고객센터 직통 상담 편의</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>삼성화재 다이렉트 착</td>
+                <td>최상 (직관적 UI)</td>
+                <td>국토부 전산망 실시간 매칭 우수</td>
+                <td>24시간 365일 비대면 자동 승인</td>
+                <td>상담 대기시간 짧음, 원격 지원</td>
+              </tr>
+              <tr>
+                <td>현대해상 하이카 다이렉트</td>
+                <td>우수 (안정적 구동)</td>
+                <td>차량가액 자동 스크래핑 빠름</td>
+                <td>야간 배서 일부 담보 제한적 심사</td>
+                <td>전문 배서 상담팀 유선 응대 양호</td>
+              </tr>
+              <tr>
+                <td>DB손해보험 프로미 다이렉트</td>
+                <td>우수 (카카오 연동 강력)</td>
+                <td>차량 등록증 OCR 인식률 매우 높음</td>
+                <td>카카오톡 챗봇 통한 간편 배서 지원</td>
+                <td>전담 상담사 콜백 예약 원활</td>
+              </tr>
+              <tr>
+                <td>KB손해보험 다이렉트</td>
+                <td>양호 (KB Pay 통합 연동)</td>
+                <td>중고차 이전 등록 정보 반영 신속</td>
+                <td>심야 시간대 전산 점검 제외 정상 가동</td>
+                <td>ARS 단축 번호 체계 편리</td>
+              </tr>
+              <tr>
+                <td>캐롯손해보험 퍼마일</td>
+                <td>최상 (월 정산 특화)</td>
+                <td>주행거리 연동형 캐롯플러그 재부착 승인</td>
+                <td>모바일 앱 중심 실시간 즉시 배서</td>
+                <td>100% 디지털 비대면 최적화</td>
+              </tr>
+              <tr>
+                <td>메리츠화재 / 한화손해보험</td>
+                <td>양호 (표준적 기능)</td>
+                <td>표준 자동차등록증 사본 심사</td>
+                <td>영업시간 외 일부 수동 심사 대기 발생</td>
+                <td>유선 고객센터 친절도 우수</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          특히 삼성화재, 현대해상, DB손해보험, KB손해보험의 빅4 다이렉트사는 국토교통부의 자동차관리정보시스템(VMIS)과 실시간 API로 연동되어 있어, 신차 출고 등록이나 중고차 이전 등록이 완료되는 즉시 별도의 등록증 종이 서류 제출 없이 차량번호 입력만으로 차종, 연식, 세부 등급, 출고 옵션 가액이 1초 만에 전산에 로딩되는 강력한 편의성을 제공합니다.
+        </p>
+      </section>
+
+      <!-- Section 7 -->
+      <section id="section-community" class="content-block">
+        <h2 class="block-title">7. 커뮤니티 실전 팁 및 내돈내산 경험 분석 (보배드림, 디시, 펨코 등)</h2>
+        <p>
+          네이버 카페, 보배드림, 디시인사이드(차량 갤러리), 에펨코리아(펨코 자동차 게시판) 등 대형 온라인 자동차 커뮤니티에서 실 운전자들이 직접 경험하고 공유한 <strong class="strong-term">내돈내산</strong> 후기와 계약 변경 노하우를 종합하면 다음과 같은 실전 꿀팁이 도출됩니다.
+        </p>
+
+        <h3 class="sub-title">보배드림 유저들의 중고차 기변 시 대차 배서 팁</h3>
+        <p>
+          기존 차를 개인 간 직거래나 상사에 넘길 때, 명의 이전이 완전히 완료되기 전까지는 기존 보험을 유지해야 합니다. 명의 이전이 넘어간 당일 상사로부터 이전된 자동차등록증 사진을 전송받자마자 그 즉시 신차로 차량 대체 배서를 신청하는 것이 보험 공백 기간을 없애는 정석입니다. 
+          만약 기존 차량을 상사에 매도하고 새 차를 사기까지 며칠 간의 텀이 발생한다면, 기존 보험을 해지하지 말고 매도 증빙(양도증명서)을 제출하여 기존 차량을 보험에서 빼낸 뒤 '피보험차량 미정(임시 대기)' 상태로 유지하다가 신차 출고일에 대체하는 방식이 단기요율 손실을 막는 가장 지혜로운 방법으로 손꼽힙니다.
+        </p>
+
+        <h3 class="sub-title">펨코 및 디시 유저들이 강조하는 운전자 범위 원복 노하우</h3>
+        <p>
+          휴가나 명절 때 가족이나 친구를 위해 1인 한정에서 누구나 운전이나 가족 한정으로 범위를 넓힌 후, 명절이 끝났음에도 원래대로 되돌리는 것을 깜빡하여 수개월 동안 비싼 보험료 요율을 그대로 부담하는 실수가 빈번하게 발생합니다.
+        </p>
+        <p>
+          커뮤니티 베스트 팁에서는 처음 변경할 때부터 만료일을 지정하여 자동으로 1인 한정으로 복귀하도록 예약 배서를 걸어두거나, 스마트폰 캘린더에 알림을 등록해 두고 일정이 끝나자마자 즉시 원복 배서를 신청하여 잔여 기간 차액을 전액 환급받으라고 거듭 당부합니다.
+        </p>
+      </section>
+
+      <!-- Section 8 -->
+      <section id="section-keywords" class="content-block">
+        <h2 class="block-title">8. AI 및 포털 트렌드: 연관 검색어 및 '함께 많이 찾는 검색어' 분석</h2>
+        <p>
+          네이버, 구글, 제미나이(Gemini), 챗지피티(ChatGPT) 등 주요 인공지능 검색 엔진과 포털의 최신 검색 트렌드를 살펴보면, 사용자들이 자동차보험 계약 변경과 관련하여 가장 밀접하게 검색하는 키워드 군집이 명확하게 형성되어 있습니다.
+        </p>
+
+        <div class="card-grid">
+          <div class="feature-card">
+            <h4>포털 자동완성 핵심 키워드</h4>
+            <p>
+              자동차보험 차량변경 방법, 자동차보험 운전자 추가 당일, 자동차보험 일할계산 환급, 다이렉트 자동차보험 명의변경, 자동차보험 자녀추가 비용, 자동차보험 임시운전자특약 시작시간.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h4>함께 많이 찾는 연관 검색어</h4>
+            <p>
+              자동차보험 주행거리 환급 신청, 대물배상 10억 차이, 자동차상해 자기신체사고 변경, 자동차보험 승계 방법, 자동차보험 양도양수 서류, 중고차 구입 후 보험 배서.
+            </p>
+          </div>
+        </div>
+        <p>
+          이러한 검색 흐름은 사용자들이 단순히 "얼마인가?"를 묻는 가격 질문을 넘어, "사고 발생 시 즉시 보장이 되는가?", "당일 몇 시부터 효력이 발생하는가?", "서류 없이 간편하게 끝낼 수 있는 좌표는 어디인가?"와 같은 구체적인 실행 중심의 정보를 집중적으로 탐색하고 있음을 방증합니다.
+        </p>
+      </section>
+
+      <!-- Section 9 -->
+      <section id="section-compliance" class="content-block">
+        <h2 class="block-title">9. 고지의무 위반 방지 및 행정·법적 유의사항</h2>
+        <p>
+          계약 변경을 처리하는 과정에서 사소한 부주의로 고지의무(알릴 의무)를 소홀히 할 경우 향후 대형 교통사고 발생 시 치명적인 불이익을 당할 수 있습니다. 다음 세 가지 법적 쟁점 사항을 철저히 준수해야 합니다.
+        </p>
+        <ol>
+          <li>
+            <strong>차량 튜닝 및 구조변경 통지:</strong> 
+            차량 출고 후 캠핑카 개조, 루프탑 텐트 설치, 배기량 변경, 수동 변속기 개조, 휠 인치업 등 구조변경(튜닝)을 실시했다면 반드시 보험사에 이 사실을 알리고 특약을 추가해야 합니다. 미통지 상태에서 화재나 단독 전복 사고가 발생할 경우 자차 보상에서 심각한 과실 분쟁이 발생합니다.
+          </li>
+          <li>
+            <strong>용도 변경(유상운송):</strong> 
+            개인 자가용 차량으로 쿠팡이츠, 배민커넥트, 타다 등의 유상 배달 및 렌트 영업을 시작했다면 반드시 '유상운송 위험담보 특약'을 추가 배서해야 합니다. 일반 자가용 담보로는 유상운송 중 발생한 사고에 대해 대인배상 I(책임보험)을 제외한 모든 종합보험 혜택이 면책됩니다.
+          </li>
+          <li>
+            <strong>운전자 생년월일 오기 입력:</strong> 
+            운전자 추가 시 가족이나 배우자의 주민등록상 생년월일을 잘못 기재하여 최저 연령 한정 기준(예: 만 30세 한정인데 실제 만 29세인 자를 등록)을 위반할 경우, 무보험차로 분류되어 법적 형사처벌 위험에 직면할 수 있으므로 최종 승인 전 주민등록번호 뒷자리까지 재차 확인해야 합니다.
+          </li>
+        </ol>
+      </section>
+
+      <!-- Section 10: Interactive Chart & Calculator -->
+      <section id="section-interactive" class="content-block">
+        <h2 class="block-title">10. 2026 자동차보험 변경 정산 인터랙티브 차트 및 실시간 계산기</h2>
+        <p>
+          계약 변경 유형별로 평균적으로 발생하는 일할 정산 비용 변동률을 시각적으로 파악하고, 사용자 본인의 잔여 보험 기간과 예상 연간 차액을 입력하여 즉각적인 추징/환급금을 계산해 볼 수 있는 시뮬레이터입니다.
+        </p>
+
+        <!-- Chart.js Container -->
+        <div class="chart-box">
+          <div class="chart-header">
+            <h3>주요 계약 변경 유형별 연간 환산 평균 보험료 변동 지수</h3>
+            <p>기준: 30대 중반 중형 승용차 1인 한정 가입 요율(100) 대비 각 변경 항목의 상대적 요율 변동 크기</p>
+          </div>
+          <div style="position: relative; height: 360px; width: 100%;">
+            <canvas id="changeTypeChart" aria-label="자동차보험 변경 유형별 요율 변동 그래프" role="img"></canvas>
+          </div>
+        </div>
+
+        <!-- Interactive Calculator Widget -->
+        <div class="calculator-panel">
+          <h3 style="margin-top:0; color: var(--secondary); font-size: 1.4rem;">실시간 배서 일할 정산 모의 계산기</h3>
+          <p style="font-size: 0.95rem; color: var(--neutral-muted);">
+            현재 가입 중인 자동차보험의 조건 변경에 따른 예상 추가 납부액 또는 환급액을 실시간으로 추산합니다.
+          </p>
+
+          <div class="calc-grid">
+            <div class="calc-group">
+              <label for="calc-current-premium">현재 1년 총 보험료 (원)</label>
+              <input type="number" id="calc-current-premium" placeholder="예: 800000" value="800000">
+            </div>
+            <div class="calc-group">
+              <label for="calc-change-type">변경 희망 유형</label>
+              <select id="calc-change-type">
+                <option value="driver-expand">운전자 범위 확대 (1인 -> 부부/가족)</option>
+                <option value="driver-anyone">운전자 범위 대폭 확대 (누구나 운전)</option>
+                <option value="vehicle-upgrade">차량 대체 (준중형 -> 대형/수입)</option>
+                <option value="vehicle-down">차량 대체 (대형 -> 경차/소형)</option>
+                <option value="coverage-up">대물/자상 보장 한도 증액</option>
+                <option value="mileage-refund">만기 마일리지 할인 환급</option>
+              </select>
+            </div>
+            <div class="calc-group">
+              <label for="calc-remain-days">잔여 보험 일수 (1일 ~ 365일)</label>
+              <input type="number" id="calc-remain-days" min="1" max="365" placeholder="예: 180" value="180">
+            </div>
+            <div class="calc-btn-wrap">
+              <button type="button" class="btn-calc" onclick="calculateEndorsement()">예상 정산 보험료 실시간 계산하기</button>
+            </div>
+          </div>
+
+          <div id="calc-result" class="calc-result-box">
+            <h4 id="calc-result-title" style="margin: 0 0 8px; font-size: 1.15rem; color: var(--neutral-dark);"></h4>
+            <p id="calc-result-detail" style="margin: 0; font-size: 1.05rem; font-weight: 600; color: var(--primary);"></p>
+            <p id="calc-result-notice" style="margin: 6px 0 0; font-size: 0.88rem; color: var(--neutral-muted);"></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 11: FAQ -->
+      <section id="section-faq" class="content-block">
+        <h2 class="block-title">11. 자주 묻는 질문 (FAQ 10선)</h2>
+        <div class="faq-list">
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Q1. 오늘 오후에 운전자 범위를 변경했는데 오늘 밤부터 바로 운전해도 되나요?</span>
+              <span class="faq-toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              원칙적으로 일반적인 운전자 범위 확대 배서 및 임시운전자 특약은 계약을 변경하고 추가 보험료 납부가 완료된 당일 24시(자정)부터 그 효력이 개시됩니다. 따라서 당일 저녁이나 낮에는 아직 보장 대상이 아니므로 운전해서는 안 되며, 반드시 운전해야 하는 날의 최소 하루 전날 미리 신청해야 안전합니다. 단, 차량 대체(대차)의 경우 기존 차량의 양도/폐차가 완료된 시점과 맞물려 즉시 효력이 발생하는 경우가 있으므로 전산 화면의 효력 개시 일시를 확인해야 합니다.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Q2. 기존 차를 팔고 새 차가 나오기까지 일주일의 공백이 있는데 보험을 해지해야 하나요?</span>
+              <span class="faq-toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              해지하지 않는 것이 훨씬 좋습니다. 기존 차량을 매도한 후 보험사에 자동차양도증명서를 제출하여 기존 차를 보험에서 제외시키고 '피보험자동차 미정' 상태로 유지해 둘 수 있습니다. 이렇게 하면 단기요율 차감에 따른 해지 손실을 전혀 보지 않고, 며칠 뒤 신차가 출고될 때 차대번호로 바로 대체하여 기존 계약 기간과 무사고 승계 혜택을 100% 그대로 이어갈 수 있습니다.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Q3. 운전자 범위를 '가족 한정'으로 바꾸면 형제자매도 운전 가능한가요?</span>
+              <span class="faq-toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              불가능합니다. 자동차보험 약관상 '가족'의 정의는 기명피보험자의 부모, 양부모, 배우자, 자녀, 며느리, 사위까지만 해당됩니다. 형제, 자매, 남매는 법적 가족 한정 범위에 포함되지 않으므로, 형제자매가 운전하려면 '가족 및 형제자매 한정 특약'이나 '지정 1인 추가', 혹은 '누구나 운전 가능'으로 배서를 진행해야 완벽하게 보장받을 수 있습니다.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Q4. 대물배상 한도를 2억에서 10억으로 올리면 보험료가 많이 비싸지나요?</span>
+              <span class="faq-toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              전혀 비싸지 않습니다. 대물배상 기본 보장(기본 위험)에 대한 보험료가 대부분을 차지하며, 2억에서 10억원으로의 구간 증액 요율은 1년치 기준으로도 1만 원에서 2만 원 안팎입니다. 잔여 기간이 6개월 남은 상태에서 계약을 변경한다면 불과 수천 원대의 아주 적은 추가 금액만 결제하면 되므로 반드시 10억원 최상위 한도로 올리는 것을 강력 추천합니다.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Q5. 마일리지 특약 환급금은 계약 기간 도중에도 중간 정산이 가능한가요?</span>
+              <span class="faq-toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              차량을 중도에 매각하거나 다른 차량으로 대체하는 경우에는 그 시점까지의 주행거리를 계측하여 중간 정산 및 일할 환급이 가능합니다. 그러나 동일 차량을 계속 운행 중인 정상 계약 상태라면 통상 보험 만기 시점(만기 전 30일~만기 후 30일 이내)에 최종 계기판 사진을 등록하여 일괄 환급받는 것이 일반적입니다.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Q6. 중고차를 샀는데 전 차주의 보험을 제가 그대로 이어받을 수 있나요?</span>
+              <span class="faq-toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              원칙적으로 개인 간 자동차보험 계약 자체의 승계(양도·양수)는 엄격한 요건이 따릅니다. 피보험자의 무사고 할인할증 등급은 개인의 고유한 운전 이력이므로 타인에게 양도되지 않습니다. 통상 매수인은 본인의 이름으로 신규 다이렉트 보험을 가입하거나 본인이 기존에 갖고 있던 보험에서 차량 대체를 진행하고, 매도인은 기존 보험을 해지하거나 새 차로 대체하는 절차를 밟습니다.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Q7. 계약 변경 시 위약금이나 수수료가 청구되나요?</span>
+              <span class="faq-toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              계약 변경 배서 자체에는 어떠한 형태의 위약금이나 별도 행정 수수료도 부과되지 않습니다. 오직 잔여 일수에 비례한 위험률 상승에 따른 순수 보험료 차액만 일할 계산되어 추징되거나 환급됩니다. 위약금 성격의 불이익은 오직 계약을 '중도 해지'할 때 단기요율이 적용됨으로써만 발생합니다.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Q8. 임시번호판 상태에서 정식 번호판이 나왔을 때 변경 방법은 어떻게 되나요?</span>
+              <span class="faq-toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              신차 출고 시 차대번호로 보험을 체결한 뒤 지자체 차량등록사업소에서 정식 등록번호를 부여받았다면, 다이렉트 모바일 앱의 '차량번호 확정/등록 배서' 메뉴에 접속하여 새 등록번호를 입력하기만 하면 됩니다. 서류 제출 없이 즉시 전산에 반영되며 추가 비용은 전혀 발생하지 않습니다.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Q9. 부부 한정 특약에서 법적 혼인신고를 하지 않은 사실혼 배우자도 등록 가능한가요?</span>
+              <span class="faq-toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              네, 자동차보험 표준약관상 사실혼 관계의 배우자도 법률상 배우자와 동일하게 부부 한정 특약의 피보험자로 인정됩니다. 다만 향후 대형 사고 발생 시 보상과정에서 사실혼 관계를 입증(동일 주소지 주민등록등본, 청첩장, 사실혼 인우보증 등)해야 할 수 있으므로 사전에 확인해 두는 것이 좋습니다.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Q10. 변경 신청 후 환급금은 언제 제 통장으로 들어오나요?</span>
+              <span class="faq-toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              다이렉트 모바일 앱을 통해 본인 명의 계좌로 환급을 신청할 경우, 주요 대형 손해보험사 전산망 기준으로 신청 즉시 또는 당일 영업시간 내에 자동 이체 입금됩니다. 은행 전산 점검 시간이나 공휴일의 경우에는 다음 첫 번째 영업일 오전 중에 전액 입금 처리됩니다.
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Section 12: Reference Links -->
+      <section id="section-reference" class="authority-section">
+        <h3 style="margin-top:0; color: var(--neutral-dark); font-size: 1.25rem;">공인된 신뢰성 있는 공식 외부 참고자료</h3>
+        <p style="font-size: 0.95rem; color: var(--neutral-muted);">
+          자동차보험 표준약관 및 계약 변경 법령과 관련된 권위 있는 외부 공인 기관의 원문 출처를 안내합니다.
+        </p>
+        <ul class="authority-list">
+          <li>
+            1. 필수 최우선 참조 사이트: 
+            <a href="https://directecheckz.reliabledone.com" target="_blank" rel="noopener noreferrer">
+              ReliableDone 자동차보험 분석센터 공식 가이드 (auto.reliabledone.com)
+            </a> - 2026 손해보험 표준 계약 변경 및 배서 정산 규정 열람
+          </li>
+          <li>
+            2. 법률 및 용어 해설: 
+            <a href="https://namu.wiki/w/%EC%9E%90%EB%8F%99%EC%B0%A8%EB%B3%B4%ED%97%98" target="_blank" rel="noopener noreferrer">
+              나무위키 자동차보험 상세 항목
+            </a> - 담보 체계, 운전자 한정 특약 및 역사적 제도 변천사 참조
+          </li>
+          <li>
+            3. 정부 감독 기구 정책 포털: 
+            <a href="https://www.fss.or.kr" target="_blank" rel="noopener noreferrer">
+              금융감독원 (fss.or.kr)
+            </a> - 자동차보험 표준약관 개정안, 보험업감독규정 및 소비자 피해구제 가이드라인
+          </li>
+        </ul>
+      </section>
+
     </main>
-  </body>
-</html>
+  </div>
+
+  
+
+  <!-- Chart.js Library -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Interactive Scripts: Chart, Accordion, Calculator -->
+  <script>
+    // 1. FAQ Accordion Logic
+    document.addEventListener('DOMContentLoaded', () => {
+      const faqItems = document.querySelectorAll('.faq-item');
+      faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', () => {
+          const isActive = item.classList.contains('active');
+          faqItems.forEach(other => {
+            other.classList.remove('active');
+            other.querySelector('.faq-answer').style.display = 'none';
+          });
+          if (!isActive) {
+            item.classList.add('active');
+            item.querySelector('.faq-answer').style.display = 'block';
+          }
+        });
+      });
+
+      // 2. Chart.js Initialization
+      const ctx = document.getElementById('changeTypeChart').getContext('2d');
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: [
+            '기준 (30대 1인 한정)',
+            '부부/가족 한정 확대',
+            '누구나 운전 확대',
+            '차량 대차 (그랜저급)',
+            '차량 대차 (수입/테슬라)',
+            '차량 대차 (경차 다운)',
+            '보장한도 증액(대물 10억)'
+          ],
+          datasets: [{
+            label: '연간 환산 위험 지수 (기준=100)',
+            data: [100, 135, 210, 140, 220, 75, 103],
+            backgroundColor: [
+              '#94a3b8',
+              '#3b82f6',
+              '#d97706',
+              '#0f766e',
+              '#dc2626',
+              '#10b981',
+              '#6366f1'
+            ],
+            borderRadius: 6,
+            borderWidth: 1,
+            borderColor: '#cbd5e1'
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: false
+            },
+            tooltip: {
+              callbacks: {
+                label: function(context) {
+                  return '위험도 지수: ' + context.parsed.y + '점';
+                }
+              }
+            }
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              ticks: {
+                stepSize: 50
+              },
+              grid: {
+                color: '#f1f5f9'
+              }
+            },
+            x: {
+              grid: {
+                display: false
+              }
+            }
+          }
+        }
+      });
+    });
+
+    // 3. Calculator Logic
+    function calculateEndorsement() {
+      const currentPremium = parseFloat(document.getElementById('calc-current-premium').value) || 0;
+      const changeType = document.getElementById('calc-change-type').value;
+      const remainDays = parseInt(document.getElementById('calc-remain-days').value, 10) || 0;
+
+      if (currentPremium <= 0 || remainDays <= 0) {
+        alert('올바른 연간 보험료와 1일 이상의 잔여 일수를 입력해 주십시오.');
+        return;
+      }
+
+      let multiplier = 0;
+      let isRefund = false;
+      let typeText = '';
+
+      switch (changeType) {
+        case 'driver-expand':
+          multiplier = 0.35; // +35%
+          typeText = '운전자 범위 확대 (부부/가족)';
+          break;
+        case 'driver-anyone':
+          multiplier = 1.10; // +110%
+          typeText = '누구나 운전 확대';
+          break;
+        case 'vehicle-upgrade':
+          multiplier = 0.45; // +45%
+          typeText = '대형 및 수입 상위 차종 대차';
+          break;
+        case 'vehicle-down':
+          multiplier = -0.25; // -25%
+          isRefund = true;
+          typeText = '경차/소형 차종 다운사이징 대차';
+          break;
+        case 'coverage-up':
+          multiplier = 0.03; // +3%
+          typeText = '대물 10억 및 자동차상해 증액';
+          break;
+        case 'mileage-refund':
+          multiplier = -0.30; // -30%
+          isRefund = true;
+          typeText = '주행거리 마일리지 환급 특약';
+          break;
+      }
+
+      const annualDifference = currentPremium * multiplier;
+      const settlementAmount = Math.round((annualDifference * remainDays) / 365);
+      const absAmount = Math.abs(settlementAmount).toLocaleString('ko-KR');
+
+      const resultBox = document.getElementById('calc-result');
+      const titleElem = document.getElementById('calc-result-title');
+      const detailElem = document.getElementById('calc-result-detail');
+      const noticeElem = document.getElementById('calc-result-notice');
+
+      resultBox.style.display = 'block';
+
+      if (isRefund) {
+        titleElem.textContent = typeText + ' 정산 결과: 환급 발생';
+        titleElem.style.color = '#0f766e';
+        detailElem.textContent = '예상 환급액: 약 ' + absAmount + ' 원 (계좌 반환)';
+        noticeElem.textContent = '남은 ' + remainDays + '일 치의 위험률 감소분이 일할 계산되어 지정하신 본인 명의 계좌로 입금됩니다.';
+      } else {
+        titleElem.textContent = typeText + ' 정산 결과: 추가 추징 발생';
+        titleElem.style.color = '#1e3a8a';
+        detailElem.textContent = '예상 추가 납부액: 약 ' + absAmount + ' 원 (결제 필요)';
+        noticeElem.textContent = '남은 ' + remainDays + '일 동안 확장된 보장에 대한 일할 순수 차액이며 별도 수수료는 0원입니다.';
+      }
+    }
+  </script>
+  
